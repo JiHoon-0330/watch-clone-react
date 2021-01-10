@@ -2,4 +2,26 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Roboto, "Noto Sans KR", "Apple SD Gothic Neo", "Nanum Gothic",
+    "Malgun Gothic", sans-serif;
+}
+
+body {
+  background-color: rgb(20, 21, 23);
+}
+
+li {
+  list-style: none;
+}
+
+.index0 {
+  transform: translateX(0.25rem);
+}
+
+.index1 {
+  transform: translateX(calc(-100vw / 7.5 * 7 + 0.25rem));
+}
+
+.index2 {
+  transform: translateX(calc(-100vw / 7.5 * 12.5 - 0.25rem));
 }

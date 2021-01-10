@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+
+.back {
+  width: 100%;
+  padding-bottom: calc(100vw / 25 * 9);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(20, 21, 23, 0) 0%,
+      rgba(20, 21, 23, 0.123) 60%,
+      rgba(20, 21, 23, 0.637) 75%,
+      rgba(20, 21, 23, 0.897) 90%,
+      rgb(20, 21, 23) 100%
+    ),
+    url("https://image.tmdb.org/t/p/original/bccR2CGTWVVSZAG0yqmy3DIvhTX.jpg");
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: -5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.5rem 3rem;
+  z-index: 1;
+}
+.h1 {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 2.3em;
+  color: rgb(238, 28, 98);
+  font-weight: 500;
+}
+
+.div {
+  padding: 0.5em;
+  background-color: rgb(223, 223, 223);
+  border-radius: 1em;
+}
+.div > span {
+  margin-right: 0.5em;
+}
+
+.div > input {
+  all: unset;
+  font-size: 1em;
+}

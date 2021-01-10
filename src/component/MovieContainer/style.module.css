@@ -1,0 +1,54 @@
+.div {
+  width: 100%;
+  min-height: calc(100vw / 7.5 / 2 * 3);
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 10rem;
+}
+
+.relative {
+  position: relative;
+}
+.ul {
+  display: flex;
+  transition: all 0.6s ease-out;
+}
+
+.button {
+  all: unset;
+  cursor: pointer;
+  position: absolute;
+  top: calc(100vw / 7.5 / 2 * 3 / 2 + 0.25rem);
+  transform: translateY(-50%);
+  height: calc(100vw / 7.5 / 2 * 3);
+  width: 5em;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.911);
+}
+
+.button:hover > span > svg {
+  display: block;
+}
+
+.button > span {
+  width: 100%;
+  font-size: 3em;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.button > span > svg {
+  display: none;
+}
+
+.next {
+  right: 0;
+}
+.hidden {
+  display: none;
+}

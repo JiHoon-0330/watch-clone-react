@@ -1,0 +1,99 @@
+.relative {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: #0b0c0d;
+  color: white;
+}
+.container > button {
+  all: unset;
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.2em;
+  height: 1.2em;
+  font-size: 2em;
+  top: 0;
+  right: 0;
+}
+
+.info {
+  width: 40%;
+  padding: 1.5rem;
+}
+
+.back {
+  width: 60%;
+  padding-bottom: calc(60vw / 25 * 14);
+  background-size: cover;
+  background-position: center center;
+}
+
+.title {
+  font-size: 2.5em;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  word-break: break-all;
+}
+
+.div {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.agerage {
+  border: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 0.7rem;
+  font-weight: 600;
+}
+.agerage > span {
+  padding: 0.2rem 0.4rem;
+}
+.agerage > .vote {
+  background-color: white;
+  color: black;
+}
+
+.adult {
+  color: rgb(207, 207, 207);
+  font-weight: 600;
+}
+
+.pre {
+  white-space: pre-wrap;
+  font-size: 1.4em;
+  color: rgb(207, 207, 207);
+  margin-bottom: 0.5em;
+}
+
+.detail {
+  color: rgb(173, 173, 173);
+  font-size: 1.1em;
+}
+.detail > div {
+  display: flex;
+  margin-bottom: 0.1em;
+}
+.genres {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.genres > * {
+  padding-right: 0.35rem;
+}
+
+.p {
+  padding-right: 0.35rem;
+}
