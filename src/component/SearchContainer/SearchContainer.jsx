@@ -8,7 +8,8 @@ const SearchContainer = ({ movieApi, searchMovie, containerIndex }) => {
   const { container, setContainer } = useContext(Context);
   useEffect(() => {
     setContainer(0);
-  }, [setContainer]);
+    window.scrollTo(0, 0);
+  }, [searchMovie, setContainer]);
 
   return (
     <div className={styles.div}>

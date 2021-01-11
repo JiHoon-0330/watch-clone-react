@@ -8,19 +8,22 @@ const HeaderContainer = () => {
     window.addEventListener("scroll", onScroll);
   }, [scroll]);
   const onScroll = event => {
-    setScroll(event.srcElement.scrollingElement.scrollTop);
+    const top = event.srcElement.scrollingElement.scrollTop;
+    setScroll(top);
   };
   return (
     <>
       <div
         className={`${styles.scrollHeader} ${
-          scroll < 200 ? styles.hide : styles.show
+          scroll < 150 ? styles.hide : styles.show
         }`}
       >
         <Header />
       </div>
       <div className={styles.back}>
-        <Header />
+        <div className={`${scroll > 150 ? styles.hide : styles.show}`}>
+          <Header />
+        </div>
       </div>
     </>
   );

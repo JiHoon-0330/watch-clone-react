@@ -1,4 +1,4 @@
-import React, { useContext, useRef } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { Context } from "../../Context/Context";
 import styles from "./style.module.css";
@@ -8,6 +8,7 @@ const Header = () => {
   const history = useHistory();
   const formRef = useRef();
   const inputRef = useRef();
+
   const onSubmit = event => {
     event.preventDefault();
     if (!inputRef.current.value) {

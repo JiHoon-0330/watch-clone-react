@@ -9,7 +9,14 @@ const ContextProvider = ({ children }) => {
 
   return (
     <Context.Provider
-      value={{ movie, setMovie, container, setContainer, title, setTitle }}
+      value={{
+        movie,
+        setMovie,
+        container,
+        setContainer,
+        title,
+        setTitle
+      }}
     >
       {children}
     </Context.Provider>
