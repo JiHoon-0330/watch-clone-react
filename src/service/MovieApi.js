@@ -47,13 +47,13 @@ class MovieApi {
     return data;
   }
 
-  async getSearchMovie(id) {
+  async getSearchMovie(title) {
     const requestOptions = {
       method: "GET"
     };
 
     const data = await fetch(
-      `https://api.themoviedb.org/3/movie/${id}?api_key=${this.apiKey}&language=en-US`,
+      `https://api.themoviedb.org/3/search/movie?api_key=${this.apiKey}&language=en-US&query=${title}&page=1&include_adult=true`,
       requestOptions
     )
       .then(response => {

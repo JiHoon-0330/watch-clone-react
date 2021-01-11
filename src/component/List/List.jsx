@@ -10,6 +10,8 @@ const List = ({ popularMovie, containerIndex }) => {
   const { setMovie, setContainer } = useContext(Context);
 
   const onClick = () => {
+    console.log({ ...popularMovie });
+    console.log(containerIndex);
     setMovie({ ...popularMovie });
     setContainer(containerIndex);
   };

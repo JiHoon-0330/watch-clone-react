@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { Context } from "../../Context/Context";
 import Detail from "../Detail/Detail";
 import List from "../List/List";
@@ -6,7 +6,11 @@ import styles from "./style.module.css";
 
 const MovieContainer = ({ movieApi, popularMovie, containerIndex }) => {
   const [index, setIndex] = useState(0);
-  const { container } = useContext(Context);
+  const { container, setContainer } = useContext(Context);
+
+  useEffect(() => {
+    setContainer(0);
+  }, [setContainer]);
 
   const onClickNext = () => {
     setIndex(index => {

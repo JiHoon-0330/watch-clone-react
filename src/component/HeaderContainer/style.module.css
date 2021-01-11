@@ -1,0 +1,30 @@
+.back {
+  width: 100%;
+  padding-bottom: calc(100vw / 25 * 9);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(20, 21, 23, 0) 0%,
+      rgba(20, 21, 23, 0.123) 60%,
+      rgba(20, 21, 23, 0.637) 75%,
+      rgba(20, 21, 23, 0.897) 90%,
+      rgb(20, 21, 23) 100%
+    ),
+    url("https://image.tmdb.org/t/p/original/bccR2CGTWVVSZAG0yqmy3DIvhTX.jpg");
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: -5rem;
+}
+.scrollHeader {
+  position: sticky;
+  top: 0;
+  background-color: black;
+  z-index: 999;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
