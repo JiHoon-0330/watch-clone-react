@@ -2,7 +2,9 @@
   position: relative;
   list-style: none;
   min-width: calc(100vw / 7.5);
-  padding: 0.25rem;
+  height: 100%;
+  padding: 0.25em;
+  margin-right: 0.5em;
   cursor: pointer;
 }
 .img {

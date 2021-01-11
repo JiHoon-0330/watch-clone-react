@@ -68,7 +68,7 @@ const Detail = ({ movieApi }) => {
                 {((vote_average + 0.5) / 2).toFixed(1)}
               </span>
             </div>
-            {adult && <p className={styles.adult}>청불</p>}
+            <div className={styles.adult}>{adult ? `청불` : `전체`}</div>
           </div>
           <pre className={styles.pre}>{overview}</pre>
           <div className={styles.detail}>
@@ -98,12 +98,15 @@ const Detail = ({ movieApi }) => {
             </div>
           </div>
         </div>
-        <div
-          className={styles.back}
-          style={{
-            backgroundImage: `linear-gradient(to left, #0B0C0D00 60%, #0B0C0D 100%),url(${imgUrl}),url(${imgThumb})`
-          }}
-        ></div>
+        <div className={styles.backContainer}>
+          <div className={styles.linearGradient}></div>
+          <div
+            className={styles.back}
+            style={{
+              backgroundImage: `url(${imgUrl}),url(${imgThumb})`
+            }}
+          ></div>
+        </div>
       </div>
     </div>
   );
