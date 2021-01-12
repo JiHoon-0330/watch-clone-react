@@ -20,10 +20,10 @@ const Detail = ({ movieApi }) => {
 
   const imgUrl = backdrop_path
     ? `https://image.tmdb.org/t/p/original${backdrop_path}`
-    : "/not.jpeg";
+    : "https://user-images.githubusercontent.com/58219394/104280490-5da5dc80-54ef-11eb-93db-a6d065601979.jpeg";
   const imgThumb = backdrop_path
     ? `https://image.tmdb.org/t/p/w200${backdrop_path}`
-    : "/not.jpeg";
+    : "https://user-images.githubusercontent.com/58219394/104280490-5da5dc80-54ef-11eb-93db-a6d065601979.jpeg";
 
   const onClick = () => {
     setContainer(false);

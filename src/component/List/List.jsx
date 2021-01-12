@@ -6,7 +6,7 @@ const List = memo(({ popularMovie, containerIndex }) => {
   const { title, original_title, poster_path } = popularMovie;
   const imgUrl = poster_path
     ? `https://image.tmdb.org/t/p/w500${poster_path}`
-    : "/not.jpeg";
+    : "https://user-images.githubusercontent.com/58219394/104280490-5da5dc80-54ef-11eb-93db-a6d065601979.jpeg";
   const { setMovie, setContainer } = useContext(Context);
 
   const onClick = () => {
