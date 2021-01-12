@@ -23,7 +23,11 @@ const Footer = memo(() => {
           </a>
         </span>
         <span className={styles.name}>
-          <a href="https://jihoon-0330.github.io/recipe-app-recat">
+          <a
+            href="https://jihoon-recipe-app.netlify.app"
+            target="_blank"
+            rel="noreferrer"
+          >
             recipe-app
           </a>
         </span>
