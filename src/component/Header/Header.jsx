@@ -1,9 +1,9 @@
-import React, { useContext, useEffect, useRef } from "react";
+import React, { useContext, memo, useRef } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { Context } from "../../Context/Context";
 import styles from "./style.module.css";
 
-const Header = () => {
+const Header = memo(() => {
   const { title, setTitle } = useContext(Context);
   const history = useHistory();
   const formRef = useRef();
@@ -44,6 +44,6 @@ const Header = () => {
       </div>
     </header>
   );
-};
+});
 
 export default Header;

@@ -1,8 +1,8 @@
-import React, { useContext } from "react";
+import React, { useContext, memo } from "react";
 import { Context } from "../../Context/Context";
 import styles from "./style.module.css";
 
-const List = ({ popularMovie, containerIndex }) => {
+const List = memo(({ popularMovie, containerIndex }) => {
   const { title, original_title, poster_path } = popularMovie;
   const imgUrl = poster_path
     ? `https://image.tmdb.org/t/p/w500${poster_path}`
@@ -10,8 +10,6 @@ const List = ({ popularMovie, containerIndex }) => {
   const { setMovie, setContainer } = useContext(Context);
 
   const onClick = () => {
-    console.log({ ...popularMovie });
-    console.log(containerIndex);
     setMovie({ ...popularMovie });
     setContainer(containerIndex);
   };
@@ -27,6 +25,6 @@ const List = ({ popularMovie, containerIndex }) => {
       </li>
     </>
   );
-};
+});
 
 export default List;

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import SearchContainer from "../SearchContainer/SearchContainer";
+import styles from "./style.module.css";
 
 const Search = ({ movieApi }) => {
   const { title } = useParams();
@@ -23,6 +24,7 @@ const Search = ({ movieApi }) => {
 
   return (
     <div>
+      <p className={styles.p}>'{title}' 검색 결과</p>
       {newArr &&
         newArr.map((item, index) => {
           return (

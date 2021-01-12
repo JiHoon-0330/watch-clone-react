@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# 왓챠 클론 프로젝트
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 리액트 훅을 사용해 제작
 
-## Available Scripts
+[사이트 바로가기 ](https://jihoon-0330.github.io/watch-clone-react/)
 
-In the project directory, you can run:
+## 메인화면
 
-### `yarn start`
+![메인](https://user-images.githubusercontent.com/58219394/104279369-875e0400-54ed-11eb-8c70-751410b6f130.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 영화 상세화면
 
-### `yarn test`
+![상세](https://user-images.githubusercontent.com/58219394/104279535-d0ae5380-54ed-11eb-83c6-20004b0b3b59.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `yarn build`
+## 검색화면
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![검색](https://user-images.githubusercontent.com/58219394/104279373-8927c780-54ed-11eb-9a96-92eb37b09fea.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# 사용한 API
 
-### `yarn eject`
+[tmdb 바로가기](https://www.themoviedb.org/?language=ko)  
+[tmdb api 바로가기](https://developers.themoviedb.org/3/movies/get-movie-details)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+tmdb에서 제공하는 api 사용
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| 요청 |      이름       |       내용       |
+| :--: | :-------------: | :--------------: |
+| Get  |   Get Details   |  영화 상세 정보  |
+| Get  | Get Now Playing |  상영 중인 목록  |
+| Get  |   Get Popular   |  인기있는 목록   |
+| Get  |  Get Top Rated  | 평점이 높은 목록 |
+| Get  |  Get Upcoming   | 상영 예정인 목록 |

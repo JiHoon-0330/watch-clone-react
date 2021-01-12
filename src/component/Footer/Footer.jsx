@@ -1,7 +1,7 @@
-import React from "react";
+import React, { memo } from "react";
 import styles from "./style.module.css";
 
-const Footer = props => {
+const Footer = memo(() => {
   return (
     <footer>
       <span className={styles.title}>Watcha</span>
@@ -22,6 +22,11 @@ const Footer = props => {
             네이버웨일 확장앱 아!맞다
           </a>
         </span>
+        <span className={styles.name}>
+          <a href="https://jihoon-0330.github.io/recipe-app-recat">
+            recipe-app
+          </a>
+        </span>
       </div>
       <div className={styles.container}>
         <span className={styles.menu}>깃허브</span>
@@ -34,9 +39,18 @@ const Footer = props => {
             네이버웨일 확장앱 아!맞다
           </a>
         </span>
+        <span className={styles.name}>
+          <a
+            href="https://github.com/JiHoon-0330/recipe-app-recat"
+            target="_blank"
+            rel="noreferrer"
+          >
+            recipe-app
+          </a>
+        </span>
       </div>
     </footer>
   );
-};
+});
 
 export default Footer;
