@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/watch-clone-react/static/css/main.10930105.chunk.css",
+    "main.js": "/watch-clone-react/static/js/main.2a8359c5.chunk.js",
+    "main.js.map": "/watch-clone-react/static/js/main.2a8359c5.chunk.js.map",
+    "runtime-main.js": "/watch-clone-react/static/js/runtime-main.d5941e30.js",
+    "runtime-main.js.map": "/watch-clone-react/static/js/runtime-main.d5941e30.js.map",
+    "static/js/2.07737c7d.chunk.js": "/watch-clone-react/static/js/2.07737c7d.chunk.js",
+    "static/js/2.07737c7d.chunk.js.map": "/watch-clone-react/static/js/2.07737c7d.chunk.js.map",
+    "index.html": "/watch-clone-react/index.html",
+    "static/css/main.10930105.chunk.css.map": "/watch-clone-react/static/css/main.10930105.chunk.css.map",
+    "static/js/2.07737c7d.chunk.js.LICENSE.txt": "/watch-clone-react/static/js/2.07737c7d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d5941e30.js",
+    "static/js/2.07737c7d.chunk.js",
+    "static/css/main.10930105.chunk.css",
+    "static/js/main.2a8359c5.chunk.js"
+  ]
+}
